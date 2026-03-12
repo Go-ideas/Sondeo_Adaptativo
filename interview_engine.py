@@ -967,6 +967,7 @@ def postprocesar_pregunta_final(pregunta: str, brief: Dict[str, Any]) -> str:
     low = re.sub(r"\bpese para ti\b", "pesen mas para ti", low)
     low = re.sub(r"\bpesen para ti\b", "pesen mas para ti", low)
     low = re.sub(r"\bque hace que\s+que\b", "que hace que", low)
+    low = re.sub(r"\bte viene a\?\s*$", "se te viene a la mente?", low)
     low = re.sub(r"\bla\?\s*$", "la?", low)
     low = re.sub(r"\?{2,}", "?", low)
     low = re.sub(r"\s+", " ", low).strip()
