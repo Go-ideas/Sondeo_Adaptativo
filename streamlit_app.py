@@ -1270,6 +1270,7 @@ def render_client_mode(deployment_cfg: Dict[str, Any]) -> None:
     if st.button("Iniciar encuesta", use_container_width=True, type="primary", key="client_btn_init"):
         st.session_state["client_state"] = start_session(trained_payload["brief"], trained_payload["plan"])
         st.session_state["client_session_saved_path"] = ""
+        st.session_state["client_answer_pending_clear"] = True
         st.rerun()
 
     client_state = st.session_state.get("client_state")
@@ -1285,8 +1286,14 @@ def render_client_mode(deployment_cfg: Dict[str, Any]) -> None:
     st.info(str(client_state.get("next_question", "")))
 
     answer_key = "client_answer_input"
+    clear_key = "client_answer_pending_clear"
     if answer_key not in st.session_state:
         st.session_state[answer_key] = ""
+    if clear_key not in st.session_state:
+        st.session_state[clear_key] = False
+    if st.session_state.get(clear_key):
+        st.session_state[answer_key] = ""
+        st.session_state[clear_key] = False
     st.text_area("Tu respuesta", key=answer_key, height=120, placeholder="Escribe tu respuesta aqui...")
 
     if st.button("Enviar", use_container_width=True, key="client_btn_send"):
@@ -1296,7 +1303,7 @@ def render_client_mode(deployment_cfg: Dict[str, Any]) -> None:
         else:
             result = step_with_human_answer(client_state, answer)
             st.session_state["client_state"] = result.get("state", client_state)
-            st.session_state[answer_key] = ""
+            st.session_state[clear_key] = True
             st.rerun()
 
     latest_state = st.session_state.get("client_state", {})
@@ -1313,6 +1320,7 @@ def render_client_mode(deployment_cfg: Dict[str, Any]) -> None:
         if st.button("Nueva encuesta", use_container_width=True, key="client_btn_new"):
             st.session_state["client_state"] = None
             st.session_state["client_session_saved_path"] = ""
+            st.session_state[clear_key] = True
             st.rerun()
 
 
