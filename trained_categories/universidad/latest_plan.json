@@ -1,0 +1,416 @@
+{
+  "version": "3.2",
+  "titulo_plan": "Plan Visual de Moderacion IA V3.2",
+  "identidad_caso": {
+    "categoria": "universidad",
+    "slug_categoria": "universidad",
+    "slug_objetivo": "identificar_los_atributos_mas_importantes_que_influyen_en_la_eleccion_de_una_uni",
+    "slug_caso": "universidad_identificar_los_atributos_mas_importantes_que_influyen_en_la_eleccion_de_una_uni",
+    "sustantivo_singular": "universidad",
+    "sustantivo_plural": "universidades"
+  },
+  "client_plan": {
+    "resumen_ejecutivo": [
+      "Blueprint ejecutable por turnos para entrevista 1-a-1.",
+      "Etapas limitadas al flujo de moderacion, sin analisis tradicional.",
+      "Cobertura transparente con target_declarado y target_operativo.",
+      "Participante simulado: edades_objetivo=16-18, edad_autoplay=16-18, genero=mixto, perfiles_objetivo=estudiante, perfil_autoplay=estudiante, profundizacion=baja, prob_confusion=0.15",
+      "Primera pregunta de inicio (IA): Cuando piensas en elegir una universidad, que es lo primero que te viene a la mente?"
+    ],
+    "target_participante_resumen": {
+      "rango_edad": "16-18",
+      "rangos_edad": [
+        "16-18"
+      ],
+      "genero": "mixto",
+      "perfil": "estudiante",
+      "perfiles": [
+        "estudiante"
+      ],
+      "nivel_conocimiento": "bajo",
+      "nivel_profundizacion": "baja",
+      "probabilidad_confusion": 0.15
+    },
+    "estilo_moderacion_aplicado": {
+      "lenguaje": "simple",
+      "max_palabras_pregunta": 14,
+      "usar_comparaciones_simples": true,
+      "evitar_abstracciones": true,
+      "tono": "cotidiano"
+    },
+    "identidad_caso": {
+      "categoria": "universidad",
+      "slug_categoria": "universidad",
+      "slug_objetivo": "identificar_los_atributos_mas_importantes_que_influyen_en_la_eleccion_de_una_uni",
+      "slug_caso": "universidad_identificar_los_atributos_mas_importantes_que_influyen_en_la_eleccion_de_una_uni",
+      "sustantivo_singular": "universidad",
+      "sustantivo_plural": "universidades"
+    },
+    "etapas_visuales": [
+      {
+        "paso": 1,
+        "id_etapa": "apertura_y_encuadre",
+        "nombre": "Apertura y encuadre",
+        "proposito": "Crear un ambiente cómodo y explicar la sesión.",
+        "criterios_exito": [
+          "Los participantes se sienten relajados.",
+          "Se entienden los objetivos de la sesión."
+        ],
+        "pregunta_guia": "¿cómo te sientes al hablar de tus opciones de universidad?"
+      },
+      {
+        "paso": 2,
+        "id_etapa": "exploracion_espontanea",
+        "nombre": "Exploracion espontanea",
+        "proposito": "Recoger opiniones iniciales sobre universidades.",
+        "criterios_exito": [
+          "Se obtienen comentarios libres y espontáneos.",
+          "Los participantes comparten sus pensamientos sin reservas."
+        ],
+        "pregunta_guia": "¿qué piensas cuando escuchas 'universidad'?"
+      },
+      {
+        "paso": 3,
+        "id_etapa": "probing_por_atributos_objetivo",
+        "nombre": "Probing por atributos objetivo",
+        "proposito": "Investigar cada atributo en detalle.",
+        "criterios_exito": [
+          "Se identifican los atributos claves para elegir una universidad.",
+          "Los estudiantes explican sus razones personales."
+        ],
+        "pregunta_guia": "¿cuán importante es la calidad académica para ti?"
+      },
+      {
+        "paso": 4,
+        "id_etapa": "evidencia_y_ejemplos",
+        "nombre": "Evidencia y ejemplos",
+        "proposito": "Buscar ejemplos concretos que respalden los atributos.",
+        "criterios_exito": [
+          "Los participantes dan ejemplos reales de sus experiencias.",
+          "Se obtienen historias que ilustran los atributos."
+        ],
+        "pregunta_guia": "¿tienes algún ejemplo de una buena experiencia académica?"
+      },
+      {
+        "paso": 5,
+        "id_etapa": "priorizacion_y_contraste",
+        "nombre": "Priorizacion y contraste",
+        "proposito": "Hacer que los estudiantes evalúen y comparen atributos.",
+        "criterios_exito": [
+          "Se obtiene un ranking de atributos por importancia.",
+          "Los estudiantes discuten entre sí sus opciones."
+        ],
+        "pregunta_guia": "Si pudieras elegir solo tres atributos, ¿cuáles serían?"
+      },
+      {
+        "paso": 6,
+        "id_etapa": "confirmacion",
+        "nombre": "Confirmacion",
+        "proposito": "Revisar los puntos clave discutidos.",
+        "criterios_exito": [
+          "Los participantes se sienten escuchados y comprendidos.",
+          "Se confirman los atributos más valorados."
+        ],
+        "pregunta_guia": "Que te gusta o no te gusta de una universidad?"
+      },
+      {
+        "paso": 7,
+        "id_etapa": "cierre",
+        "nombre": "Cierre",
+        "proposito": "Finalizar la sesión y agradecer a los participantes.",
+        "criterios_exito": [
+          "Los participantes se sienten satisfechos con su contribución.",
+          "Finalizamos la sesión amigablemente."
+        ],
+        "pregunta_guia": "¿hay algo más que quisieras añadir sobre tu experiencia?"
+      }
+    ],
+    "primera_pregunta_inicio": "Cuando piensas en elegir una universidad, que es lo primero que te viene a la mente?",
+    "preguntas_ejemplo_estilo": {
+      "profundizar": "Que tiene eso que te gusta?",
+      "reformular": "Te lo pregunto de otra forma: que opinas de la calidad de clases?"
+    },
+    "medicion_resumida": {
+      "target_declarado": 6,
+      "target_operativo": 6,
+      "umbral_cierre": 0.8,
+      "max_preguntas": 12,
+      "como_se_calcula": "cobertura = atributos_detectados_unicos / target_operativo"
+    }
+  },
+  "engine_blueprint": {
+    "etapas": [
+      {
+        "id": "apertura_y_encuadre",
+        "id_etapa": "apertura_y_encuadre",
+        "criterios_entrada": [
+          "inicio de sesion"
+        ],
+        "criterios_salida": [
+          "participante orientado"
+        ],
+        "acciones_permitidas": [
+          "reformular",
+          "aclarar",
+          "explorar_nuevo_tema",
+          "reconducir",
+          "confirmacion"
+        ]
+      },
+      {
+        "id": "exploracion_espontanea",
+        "id_etapa": "exploracion_espontanea",
+        "criterios_entrada": [
+          "tema abierto"
+        ],
+        "criterios_salida": [
+          "atributos iniciales detectados"
+        ],
+        "acciones_permitidas": [
+          "reformular",
+          "profundizar",
+          "explorar_nuevo_tema",
+          "reconducir",
+          "confirmacion"
+        ]
+      },
+      {
+        "id": "probing_por_atributos_objetivo",
+        "id_etapa": "probing_por_atributos_objetivo",
+        "criterios_entrada": [
+          "hay atributo candidato"
+        ],
+        "criterios_salida": [
+          "atributo profundizado"
+        ],
+        "acciones_permitidas": [
+          "reformular",
+          "profundizar",
+          "pedir_ejemplo",
+          "aclarar",
+          "explorar_nuevo_tema",
+          "confirmacion"
+        ]
+      },
+      {
+        "id": "evidencia_y_ejemplos",
+        "id_etapa": "evidencia_y_ejemplos",
+        "criterios_entrada": [
+          "respuesta general"
+        ],
+        "criterios_salida": [
+          "ejemplo concreto obtenido"
+        ],
+        "acciones_permitidas": [
+          "reformular",
+          "pedir_ejemplo",
+          "aclarar",
+          "profundizar",
+          "confirmacion"
+        ]
+      },
+      {
+        "id": "priorizacion_y_contraste",
+        "id_etapa": "priorizacion_y_contraste",
+        "criterios_entrada": [
+          ">=2 atributos detectados"
+        ],
+        "criterios_salida": [
+          "prioridad comparativa clara"
+        ],
+        "acciones_permitidas": [
+          "reformular",
+          "explorar_nuevo_tema",
+          "aclarar",
+          "profundizar",
+          "confirmacion"
+        ]
+      },
+      {
+        "id": "confirmacion",
+        "id_etapa": "confirmacion",
+        "criterios_entrada": [
+          "hallazgos preliminares"
+        ],
+        "criterios_salida": [
+          "confirmacion del participante"
+        ],
+        "acciones_permitidas": [
+          "reformular",
+          "aclarar",
+          "confirmacion",
+          "cerrar",
+          "profundizar"
+        ]
+      },
+      {
+        "id": "cierre",
+        "id_etapa": "cierre",
+        "criterios_entrada": [
+          "condicion de cierre"
+        ],
+        "criterios_salida": [
+          "entrevista finalizada"
+        ],
+        "acciones_permitidas": [
+          "cerrar"
+        ]
+      }
+    ],
+    "ciclo_por_turno": [
+      "preguntar",
+      "evaluar_respuesta",
+      "detectar_atributos",
+      "decidir_accion",
+      "generar_siguiente_pregunta"
+    ],
+    "reglas_de_decision": [
+      {
+        "id": "no_entendio",
+        "si": "si respuesta contiene no entendi o reformula",
+        "entonces": "reformular",
+        "accion": "reformular",
+        "prioridad": 1
+      },
+      {
+        "id": "queja_repeticion",
+        "si": "si queja_repeticion",
+        "entonces": "pedir ejemplo concreto",
+        "accion": "pedir_ejemplo",
+        "prioridad": 2
+      },
+      {
+        "id": "sin_atributo",
+        "si": "si no hay atributo detectado",
+        "entonces": "reconducir al objetivo",
+        "accion": "reconducir",
+        "prioridad": 3
+      },
+      {
+        "id": "atributo_repetido",
+        "si": "si atributo detectado ya cubierto",
+        "entonces": "explorar atributo pendiente",
+        "accion": "explorar_nuevo_tema",
+        "prioridad": 4
+      },
+      {
+        "id": "estancamiento",
+        "si": "si 2 turnos sin atributos nuevos",
+        "entonces": "explorar nuevo tema en atributo no cubierto",
+        "accion": "explorar_nuevo_tema",
+        "prioridad": 5
+      },
+      {
+        "id": "respuesta_vaga",
+        "si": "si respuesta vaga",
+        "entonces": "pedir ejemplo",
+        "accion": "pedir_ejemplo",
+        "prioridad": 6
+      },
+      {
+        "id": "cierre_umbral",
+        "si": "si coverage_ratio >= umbral_cierre",
+        "entonces": "confirmacion",
+        "accion": "confirmacion",
+        "prioridad": 7
+      },
+      {
+        "id": "cierre_max",
+        "si": "si turnos == max_preguntas",
+        "entonces": "cerrar",
+        "accion": "cerrar",
+        "prioridad": 8
+      }
+    ],
+    "templates_por_accion": {
+      "profundizar": [
+        "Que tiene eso que te gusta?",
+        "Que notas cuando la eliges?",
+        "Como te das cuenta?",
+        "Que te hace pensar eso?",
+        "Que ves ahi que te importa?"
+      ],
+      "pedir_ejemplo": [
+        "Me puedes dar un ejemplo?",
+        "Te ha pasado con alguna universidad?",
+        "Cuando lo notas mas?",
+        "Te acuerdas de una vez reciente?"
+      ],
+      "aclarar": [
+        "Que quieres decir con eso?",
+        "Me lo puedes explicar mas facil?",
+        "A que te refieres?"
+      ],
+      "reformular": [
+        "Te lo pregunto de otra forma: que opinas de {foco}?",
+        "Vamos de nuevo: que es lo que mas te importa de {foco}?",
+        "Si lo vemos simple, que piensas de {foco}?"
+      ],
+      "explorar_nuevo_tema": [
+        "Aparte de eso, hay algo mas en lo que te fijes?",
+        "Cuando comparas universidades, que otra cosa notas?",
+        "Y sobre {nuevo_foco}, que opinas?"
+      ],
+      "reconducir": [
+        "Volviendo al tema, que es lo mas importante para ti?",
+        "Si eliges una sola cosa, cual seria?"
+      ],
+      "confirmacion": [
+        "Entonces, eso seria lo mas importante para ti?",
+        "Dirias que eso pesa mas?"
+      ],
+      "cerrar": [
+        "Para terminar, que te gustaria destacar?",
+        "Antes de cerrar, que es lo mas importante?"
+      ]
+    },
+    "parametros": {
+      "umbral_cierre": 0.8,
+      "max_preguntas": 12,
+      "anti_repeticion_similitud_umbral": 0.78,
+      "anti_repeticion_umbral": 0.78,
+      "max_turnos_sin_atributos_nuevos": 2,
+      "min_turnos_antes_cierre": 6,
+      "min_atributos_confirmados": 4
+    },
+    "guardrails": [
+      "no_preguntas_sugestivas",
+      "no_preguntas_dobles",
+      "no_preguntas_temporales",
+      "no_inventar_atributos_fuera_de_lista_salvo_emergentes"
+    ],
+    "validaciones": [
+      {
+        "regla": "objetivo_principal_presente",
+        "estado": "ok",
+        "criticidad": "alta",
+        "detalle": "objetivo_principal informado"
+      },
+      {
+        "regla": "antecedente_presente",
+        "estado": "ok",
+        "criticidad": "media",
+        "detalle": "antecedente informado"
+      },
+      {
+        "regla": "target_vs_lista",
+        "estado": "ok",
+        "criticidad": "alta",
+        "detalle": "target_declarado=6 consistente con len_lista=6"
+      },
+      {
+        "regla": "definiciones_operativas_fuente",
+        "estado": "ok",
+        "criticidad": "media",
+        "detalle": "generadas_por_ia"
+      },
+      {
+        "regla": "max_preguntas_valido",
+        "estado": "ok",
+        "criticidad": "alta",
+        "detalle": "max_preguntas valido"
+      }
+    ]
+  },
+  "pendientes": []
+}
