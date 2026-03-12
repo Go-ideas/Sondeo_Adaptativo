@@ -1192,6 +1192,11 @@ def render_client_mode(deployment_cfg: Dict[str, Any]) -> None:
         st.session_state["client_state"] = None
     if "client_session_saved_path" not in st.session_state:
         st.session_state["client_session_saved_path"] = ""
+    if "client_go_to_categories" not in st.session_state:
+        st.session_state["client_go_to_categories"] = False
+
+    if st.session_state.pop("client_go_to_categories", False):
+        st.session_state["client_nav_view"] = "Categorias disponibles"
 
     view = st.sidebar.radio(
         "Secciones",
@@ -1204,7 +1209,7 @@ def render_client_mode(deployment_cfg: Dict[str, Any]) -> None:
         st.subheader("Inicio")
         st.write("Este sitio permite probar una encuesta cualitativa moderada por IA.")
         if st.button("Comenzar prueba", type="primary", use_container_width=True, key="btn_client_start"):
-            st.session_state["client_nav_view"] = "Categorias disponibles"
+            st.session_state["client_go_to_categories"] = True
             st.rerun()
         return
 
