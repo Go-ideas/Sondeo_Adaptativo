@@ -1,72 +1,72 @@
-﻿{
-    "brief":  {
-                  "antecedente":  "Una universidad llamada Universidad Patito quiere entender que aspectos son mas importantes para los estudiantes al momento de elegir una universidad y que elementos pueden diferenciar a la Universidad Patito frente a otras instituciones.",
-                  "objetivo_principal":  "Identificar los atributos mas importantes que influyen en la eleccion de una universidad y detectar cuales podrian diferenciar a la Universidad Patito.",
-                  "tipo_sesion":  "Exploracion por atributos"
-              },
-    "atributos_objetivo":  {
-                               "target":  6,
-                               "lista":  [
-                                             "Calidad academica",
-                                             "Prestigio y reputacion",
-                                             "Infraestructura y recursos",
-                                             "Costo y accesibilidad",
-                                             "Empleabilidad y oportunidades laborales",
-                                             "Ambiente universitario y experiencia estudiantil"
-                                         ]
-                           },
-    "definiciones_operativas":  {
-                                    "Calidad academica":  {
-                                                              "que_cuenta":  "La formaciÃ³n y la experiencia de los docentes, la relevancia del contenido curricular, y la tasa de graduaciÃ³n de los estudiantes.",
-                                                              "que_no_cuenta":  "Elementos subjetivos o percepciones no verificables sobre la calidad de la enseÃ±anza."
-                                                          },
-                                    "Prestigio y reputacion":  {
-                                                                   "que_cuenta":  "La posiciÃ³n de ranking de la universidad en comparativas nacionales e internacionales y la percepciÃ³n pÃºblica basada en logros acadÃ©micos y contribuciones a la sociedad.",
-                                                                   "que_no_cuenta":  "Opiniones personales sin respaldo en datos concretos o rankings."
-                                                               },
-                                    "Infraestructura y recursos":  {
-                                                                       "que_cuenta":  "La disponibilidad de laboratorios, bibliotecas, zonas de estudio y tecnologÃ­a actualizada que faciliten el aprendizaje.",
-                                                                       "que_no_cuenta":  "La estÃ©tica de los edificios sin considerar su funcionalidad o adecuaciÃ³n a las necesidades educativas."
-                                                                   },
-                                    "Costo y accesibilidad":  {
-                                                                  "que_cuenta":  "Las tarifas de matrÃ­cula, costos de materiales, y la disponibilidad de becas o financiamiento para estudiantes.",
-                                                                  "que_no_cuenta":  "Promociones o descuentos temporales que no reflejan el costo real y a largo plazo de estudiar en la universidad."
-                                                              },
-                                    "Empleabilidad y oportunidades laborales":  {
-                                                                                    "que_cuenta":  "Programas de prÃ¡cticas profesionales, bolsas de trabajo y la tasa de colocaciÃ³n laboral de los graduados.",
-                                                                                    "que_no_cuenta":  "Promesas de empleo que no estÃ¡n respaldadas por datos de inserciÃ³n laboral de egresados."
-                                                                                },
-                                    "Ambiente universitario y experiencia estudiantil":  {
-                                                                                             "que_cuenta":  "La oferta de actividades extracurriculares, el apoyo emocional y acadÃ©mico disponible, y el nivel de integraciÃ³n social entre estudiantes.",
-                                                                                             "que_no_cuenta":  "Percepciones individuales que no reflejan la realidad del clima general de la comunidad estudiantil."
-                                                                                         }
-                                },
-    "config":  {
-                   "max_preguntas":  12,
-                   "numero_entrevistas_planeadas":  12,
-                   "profundidad":  "Alta",
-                   "permitir_atributos_emergentes":  true,
-                   "max_atributos_emergentes":  6,
-                   "definiciones_operativas_fuente":  "generadas_por_ia",
-                   "probabilidad_confusion":  0.15,
-                   "primera_pregunta_modo":  "ia",
-                   "primera_pregunta_manual":  ""
-               },
-    "target_participante":  {
-                                "rango_edad":  "16-18",
-                                "rangos_edad":  [
-                                                    "16-18"
-                                                ],
-                                "genero":  "mixto",
-                                "perfil":  "estudiante",
-                                "perfiles":  [
-                                                 "estudiante"
-                                             ],
-                                "nivel_conocimiento":  "bajo",
-                                "nivel_profundizacion":  "baja"
-                            },
-    "guardrails":  {
-                       "evitar_sugestivas":  true,
-                       "no_preguntas_temporales":  true
-                   }
+{
+  "brief": {
+    "antecedente": "Una universidad llamada Universidad Patito quiere entender que aspectos son mas importantes para los estudiantes al momento de elegir una universidad y que elementos pueden diferenciar a la Universidad Patito frente a otras instituciones.",
+    "objetivo_principal": "Identificar los atributos mas importantes que influyen en la eleccion de una universidad y detectar cuales podrian diferenciar a la Universidad Patito.",
+    "tipo_sesion": "Exploracion por atributos"
+  },
+  "atributos_objetivo": {
+    "target": 6,
+    "lista": [
+      "Calidad academica",
+      "Prestigio y reputacion",
+      "Infraestructura y recursos",
+      "Costo y accesibilidad",
+      "Empleabilidad y oportunidades laborales",
+      "Ambiente universitario y experiencia estudiantil"
+    ]
+  },
+  "definiciones_operativas": {
+    "Calidad academica": {
+      "que_cuenta": "La formación y la experiencia de los docentes, la relevancia del contenido curricular, y la tasa de graduación de los estudiantes.",
+      "que_no_cuenta": "Elementos subjetivos o percepciones no verificables sobre la calidad de la enseñanza."
+    },
+    "Prestigio y reputacion": {
+      "que_cuenta": "La posición de ranking de la universidad en comparativas nacionales e internacionales y la percepción pública basada en logros académicos y contribuciones a la sociedad.",
+      "que_no_cuenta": "Opiniones personales sin respaldo en datos concretos o rankings."
+    },
+    "Infraestructura y recursos": {
+      "que_cuenta": "La disponibilidad de laboratorios, bibliotecas, zonas de estudio y tecnología actualizada que faciliten el aprendizaje.",
+      "que_no_cuenta": "La estética de los edificios sin considerar su funcionalidad o adecuación a las necesidades educativas."
+    },
+    "Costo y accesibilidad": {
+      "que_cuenta": "Las tarifas de matrícula, costos de materiales, y la disponibilidad de becas o financiamiento para estudiantes.",
+      "que_no_cuenta": "Promociones o descuentos temporales que no reflejan el costo real y a largo plazo de estudiar en la universidad."
+    },
+    "Empleabilidad y oportunidades laborales": {
+      "que_cuenta": "Programas de prácticas profesionales, bolsas de trabajo y la tasa de colocación laboral de los graduados.",
+      "que_no_cuenta": "Promesas de empleo que no están respaldadas por datos de inserción laboral de egresados."
+    },
+    "Ambiente universitario y experiencia estudiantil": {
+      "que_cuenta": "La oferta de actividades extracurriculares, el apoyo emocional y académico disponible, y el nivel de integración social entre estudiantes.",
+      "que_no_cuenta": "Percepciones individuales que no reflejan la realidad del clima general de la comunidad estudiantil."
+    }
+  },
+  "config": {
+    "max_preguntas": 12,
+    "numero_entrevistas_planeadas": 12,
+    "profundidad": "Alta",
+    "permitir_atributos_emergentes": true,
+    "max_atributos_emergentes": 6,
+    "definiciones_operativas_fuente": "generadas_por_ia",
+    "probabilidad_confusion": 0.15,
+    "primera_pregunta_modo": "ia",
+    "primera_pregunta_manual": ""
+  },
+  "target_participante": {
+    "rango_edad": "16-18",
+    "rangos_edad": [
+      "16-18"
+    ],
+    "genero": "mixto",
+    "perfil": "estudiante",
+    "perfiles": [
+      "estudiante"
+    ],
+    "nivel_conocimiento": "bajo",
+    "nivel_profundizacion": "baja"
+  },
+  "guardrails": {
+    "evitar_sugestivas": true,
+    "no_preguntas_temporales": true
+  }
 }
