@@ -1469,7 +1469,9 @@ st.title("Generador de Plan Visual de Moderacion IA")
 st.caption("Blueprint ejecutable por turnos para moderacion cualitativa")
 
 try:
-    api_key = load_api_key_from_file("tokenkey.txt")
+    api_key = str(st.secrets.get("OPENAI_API_KEY", "")).strip()
+    if not api_key:
+        api_key = load_api_key_from_file("tokenkey.txt")
     os.environ["OPENAI_API_KEY"] = api_key
 except Exception as exc:
     st.error(f"Error al cargar API key: {exc}")
