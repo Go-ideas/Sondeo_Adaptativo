@@ -1,0 +1,107 @@
+{
+  "suite": "categoria_seed_v1",
+  "categoria": "demo_producto",
+  "n_casos": 10,
+  "cases": [
+    {
+      "case_name": "demo_producto_claro_001",
+      "perfil_respuesta_simulada": "claro",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Calidad percibida",
+        "respuesta_ejemplo": "Me fijo en demo_producto - calidad percibida."
+      }
+    },
+    {
+      "case_name": "demo_producto_vago_002",
+      "perfil_respuesta_simulada": "vago",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Precio",
+        "respuesta_ejemplo": "Me fijo en el precio."
+      }
+    },
+    {
+      "case_name": "demo_producto_redundante_003",
+      "perfil_respuesta_simulada": "redundante",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Experiencia de uso",
+        "respuesta_ejemplo": "Me fijo en demo_producto - experiencia de uso."
+      }
+    },
+    {
+      "case_name": "demo_producto_fuera_de_tema_004",
+      "perfil_respuesta_simulada": "fuera_de_tema",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Confianza",
+        "respuesta_ejemplo": "Me fijo en demo_producto - confianza."
+      }
+    },
+    {
+      "case_name": "demo_producto_contradictorio_005",
+      "perfil_respuesta_simulada": "contradictorio",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Diferenciacion",
+        "respuesta_ejemplo": "Me fijo en demo_producto - diferenciacion."
+      }
+    },
+    {
+      "case_name": "demo_producto_confuso_006",
+      "perfil_respuesta_simulada": "confuso",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Disponibilidad",
+        "respuesta_ejemplo": "Me fijo en demo_producto - disponibilidad."
+      }
+    },
+    {
+      "case_name": "demo_producto_muy_breve_007",
+      "perfil_respuesta_simulada": "muy_breve",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Servicio",
+        "respuesta_ejemplo": "Me fijo en demo_producto - servicio."
+      }
+    },
+    {
+      "case_name": "demo_producto_comparativo_008",
+      "perfil_respuesta_simulada": "comparativo",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Reputacion",
+        "respuesta_ejemplo": "Me fijo en demo_producto - reputacion."
+      }
+    },
+    {
+      "case_name": "demo_producto_claro_009",
+      "perfil_respuesta_simulada": "claro",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Calidad percibida",
+        "respuesta_ejemplo": "Me fijo en demo_producto - calidad percibida."
+      }
+    },
+    {
+      "case_name": "demo_producto_vago_010",
+      "perfil_respuesta_simulada": "vago",
+      "prompt_seed": {
+        "categoria": "demo_producto",
+        "objetivo": "Evaluar diferenciales de compra",
+        "foco": "Demo_Producto - Precio",
+        "respuesta_ejemplo": "Me fijo en el precio."
+      }
+    }
+  ]
+}

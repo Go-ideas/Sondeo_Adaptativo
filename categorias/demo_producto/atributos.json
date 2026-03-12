@@ -1,0 +1,15 @@
+{
+  "categoria": "demo_producto",
+  "objetivo": "Evaluar diferenciales de compra",
+  "target_atributos": 8,
+  "atributos": [
+    "Demo_Producto - Calidad percibida",
+    "Demo_Producto - Precio",
+    "Demo_Producto - Experiencia de uso",
+    "Demo_Producto - Confianza",
+    "Demo_Producto - Diferenciacion",
+    "Demo_Producto - Disponibilidad",
+    "Demo_Producto - Servicio",
+    "Demo_Producto - Reputacion"
+  ]
+}

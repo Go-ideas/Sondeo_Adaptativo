@@ -1,0 +1,42 @@
+{
+  "categorias_publicadas": [
+    "universidad",
+    "tecnologia",
+    "seguro",
+    "banco"
+  ],
+  "metadata": {
+    "universidad": {
+      "display_name": "Universidades",
+      "version_modelo": "v1.0",
+      "estado": "publicada",
+      "cumple_guias": true,
+      "aprobada_manual": true,
+      "description": "Prueba de percepciones sobre eleccion de universidad."
+    },
+    "tecnologia": {
+      "display_name": "Tecnologia",
+      "version_modelo": "v1.0",
+      "estado": "pendiente_entrenamiento",
+      "cumple_guias": false,
+      "aprobada_manual": false,
+      "description": "Categoria en evaluacion interna."
+    },
+    "seguro": {
+      "display_name": "Seguro",
+      "version_modelo": "v1.0",
+      "estado": "pendiente_entrenamiento",
+      "cumple_guias": false,
+      "aprobada_manual": false,
+      "description": "Categoria en evaluacion interna."
+    },
+    "banco": {
+      "display_name": "Banco",
+      "version_modelo": "v1.0",
+      "estado": "pendiente_entrenamiento",
+      "cumple_guias": false,
+      "aprobada_manual": false,
+      "description": "Categoria en evaluacion interna."
+    }
+  }
+}

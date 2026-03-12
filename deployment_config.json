@@ -1,0 +1,7 @@
+{
+  "app_mode": "client",
+  "default_category": "universidad",
+  "show_admin_tools": false,
+  "allow_category_selection": true,
+  "save_client_sessions": true
+}
