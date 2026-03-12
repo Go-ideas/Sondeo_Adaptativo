@@ -1,0 +1,11 @@
+﻿{
+    "max_preguntas":  12,
+    "numero_entrevistas_planeadas":  12,
+    "profundidad":  "Alta",
+    "permitir_atributos_emergentes":  true,
+    "max_atributos_emergentes":  6,
+    "definiciones_operativas_fuente":  "generadas_por_ia",
+    "probabilidad_confusion":  0.15,
+    "primera_pregunta_modo":  "ia",
+    "primera_pregunta_manual":  ""
+}

@@ -1,0 +1,61 @@
+{
+  "categoria": "demo_producto",
+  "keywords_por_atributo": {
+    "Demo_Producto - Calidad percibida": [
+      "demo",
+      "producto",
+      "calidad",
+      "percibida"
+    ],
+    "Demo_Producto - Precio": [
+      "demo",
+      "producto",
+      "precio"
+    ],
+    "Demo_Producto - Experiencia de uso": [
+      "demo",
+      "producto",
+      "experiencia",
+      "uso"
+    ],
+    "Demo_Producto - Confianza": [
+      "demo",
+      "producto",
+      "confianza"
+    ],
+    "Demo_Producto - Diferenciacion": [
+      "demo",
+      "producto",
+      "diferenciacion"
+    ],
+    "Demo_Producto - Disponibilidad": [
+      "demo",
+      "producto",
+      "disponibilidad"
+    ],
+    "Demo_Producto - Servicio": [
+      "demo",
+      "producto",
+      "servicio"
+    ],
+    "Demo_Producto - Reputacion": [
+      "demo",
+      "producto",
+      "reputacion"
+    ]
+  },
+  "semantic_map_seed": {
+    "demo": "demo producto calidad percibida",
+    "producto": "demo producto calidad percibida",
+    "calidad": "demo producto calidad percibida",
+    "percibida": "demo producto calidad percibida",
+    "precio": "demo producto precio",
+    "experiencia": "demo producto experiencia de uso",
+    "uso": "demo producto experiencia de uso",
+    "confianza": "demo producto confianza",
+    "diferenciacion": "demo producto diferenciacion",
+    "disponibilidad": "demo producto disponibilidad",
+    "servicio": "demo producto servicio",
+    "reputacion": "demo producto reputacion"
+  }
+}
